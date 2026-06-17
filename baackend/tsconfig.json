@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020",                                 /* Set the JS version (ES2020 is great for modern Node) */
+    "module": "CommonJS",                             /* Use CommonJS for Node.js compatibility */
+    "rootDir": "./src",                               /* Where your TS source files are located */
+    "outDir": "./dist",                               /* Where the compiled JS files should go */
+    
+    /* Strict Checks */
+    "strict": true,                                   /* Enable all strict type-checking options */
+    "noImplicitAny": true,                             /* Raise error on expressions and declarations with an implied 'any' type */
+    "strictNullChecks": true,                          /* When strictNullChecks is enabled, null and undefined are not assignable to other types */
+    
+    /* Module Resolution */
+    "esModuleInterop": true,                           /* Allows importing CommonJS modules as if they were ES modules */
+    "forceConsistentCasingInFileNames": true,          /* Ensures case sensitivity is consistent across OS (Windows/Mac/Linux) */
+    "skipLibCheck": true                               /* Skip type checking of all declaration files (.d.ts) for faster builds */
+  },
+  "include": ["src/**/*"],                             /* Tell TS to compile everything in the src folder */
+  "exclude": ["node_modules"]                           /* Don't compile the node_modules folder */
+}
